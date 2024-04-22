@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="login.css" />
+    <title>Log In</title>
+  </head>
+  <body>
+    <main class="login-page">
+      <section class="login-page-container">
+        <h1 class="login-page-title">Log in to your Account</h1>
+        <fieldset class="fieldset">
+          <figure class="login-image-container">
+            <img class="login-image" src="./assets/login.jpg" alt="" />
+          </figure>
+          <form action="" class="login-form">
+            <div class="input-container">
+              <span class="input-icon"><i class="fa-solid fa-envelope"></i> </span>
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                class="input-field"
+              />
+              <label htmlFor="" class="input-label"> Email Address </label>
+              <span class="input-highlight"></span>
+            </div>
+
+            <div class="input-container">
+              <span class="input-icon"> <i class="fa-solid fa-lock"></i> </span>
+              <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                class="input-field"
+              />
+              <label htmlFor="" class="input-label"> Password </label>
+              <span class="input-highlight"></i></span>
+            </div>
+
+            <div class="consent-container">
+              <input type="checkbox" name="agree" class="consent-input" />
+              <span class="accept">I accept</span>
+              <a class="terms-of-use" href="">Terms of Use</a>
+            </div>
+
+            <button class="login-btn">Log In</button>
+            <p class="have-account">
+              Already have an account?
+              <a class="link-to-login" href="register.html">Log In</a>
+            </p>
+          </form>
+        </fieldset>
+      </section>
+    </main>
+  </body>
+</html>

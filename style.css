@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Fira+Sans:wght@200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .header {
@@ -66,9 +68,11 @@
 }
 
 .search-form {
+  position: relative;
   font-size: 14px;
   font-family: arial, sans-serif;
   display: flex;
+  align-items: center;
   z-index: 3;
   height: 44px;
   background: white;
@@ -82,6 +86,15 @@
 .search-form:hover {
   box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
   border-color: rgba(223, 225, 229, 0);
+}
+
+.search-icon {
+  position: absolute;
+  top: 0.7rem;
+  left: 0.5rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: green;
 }
 
 .input-field {
@@ -98,7 +111,18 @@
   font-size: 16px;
   max-width: 100%;
   width: 100%;
-  padding: 0 1rem;
+  padding: 0 0 0 2rem;
+
+  &::placeholder {
+    padding-left: 0.5rem;
+  }
+}
+
+.voice-search {
+  font-size: 1.6rem;
+  margin-right: 0.5rem;
+  color: green;
+  cursor: pointer;
 }
 
 .search-btn {
@@ -108,7 +132,7 @@
 }
 
 .plant-image {
-  width: 12rem;
+  width: 15rem;
   height: 8rem;
   border-radius: 2px;
   object-fit: cover;
@@ -158,6 +182,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
 }
 
 .wrapper {
@@ -165,12 +190,21 @@
 
 .footer-title {
   color: #ffffff;
+  margin: 1rem 0g;
 }
 
 .footer-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .footer-item {
+}
+
+.footer-icon {
+  color: white;
+  cursor: pointer;
 }
 
 .footer-item-link {
@@ -181,6 +215,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   background-color: #e6e6fa;
 }
 
