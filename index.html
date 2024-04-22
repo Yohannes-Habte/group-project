@@ -10,27 +10,52 @@
     <!-- Header section -->
     <header class="header">
       <!-- Top Header section -->
-      <div>
-        <figure>
-          <img src="" alt="" />
-        </figure>
-        <ul>
-          <li><a href="">Sign Up</a></li>
-          <li><a href="">Sign In</a></li>
+      <section class="logo-and-account-wrapper">
+        <h1 class="text-logo">Reforestation Ltd</h1>
+
+        <ul class="account-wrapper">
+          <li class="account"><a class="acount-link" href="">Sign Up</a></li>
+          <li class="account"><a class="acount-link" href="">Sign In</a></li>
         </ul>
-      </div>
+      </section>
 
       <!-- Middle Header section -->
       <div class="plants-and-search-wrapper">
-        <figure class="first-plant-container">
-          <img class="first-plant-image" src="" alt="" />
+        <figure class="logo-container">
+          <img src="./assets/logo.png" class="logo" alt="" />
         </figure>
-        <form action="">
-          <input type="text" name="" id="" />
-          <button>Go</button>
+        <form action="" class="search-form">
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Type Text Here ..."
+            class="input-field"
+          />
+
+          <svg
+            className="voice-search"
+            role="button"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="#4285f4"
+              d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z"
+            ></path>
+            <path fill="#34a853" d="m11 18.08h2v3.92h-2z"></path>
+            <path
+              fill="#fbbc05"
+              d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z"
+            ></path>
+            <path
+              fill="#ea4335"
+              d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z"
+            ></path>
+          </svg>
         </form>
-        <figure class="second-plant-container">
-          <img class="second-plant-image" src="" alt="" />
+        <figure class="plant-container">
+          <img class="plant-image" src="./assets/forest.jpg" alt="" />
         </figure>
       </div>
 
@@ -59,20 +84,36 @@
         <section class="wrapper">
           <h1 class="footer-title">Map</h1>
           <ul class="footer-items">
-            <li class="footer-item"><a href="">Home</a></li>
-            <li class="footer-item"><a href="">Products</a></li>
-            <li class="footer-item"><a href="">Contact</a></li>
-            <li class="footer-item"><a href="">Jobs</a></li>
+            <li class="footer-item">
+              <a class="footer-item-link" href="">Home</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-item-link" href="">Products</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-item-link" href="">Contact</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-item-link" href="">Jobs</a>
+            </li>
           </ul>
         </section>
 
         <section class="wrapper">
           <h1 class="footer-title">Social Media</h1>
           <ul class="footer-items">
-            <li class="footer-item"><a href="">Facebook</a></li>
-            <li class="footer-item"><a href="">Twitter</a></li>
-            <li class="footer-item"><a href="">Github</a></li>
-            <li class="footer-item"><a href=""> LinkedIn</a></li>
+            <li class="footer-item">
+              <a class="footer-item-link" href="">Facebook</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-item-link" href="">Twitter</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-item-link" href="">Github</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-item-link" href=""> LinkedIn</a>
+            </li>
           </ul>
         </section>
       </article>
@@ -80,7 +121,7 @@
       <div class="copyrights-wrapper">
         <p class="copyrights">Copyrights</p>
         <figure class="logo-container">
-          <img src="" class="log-image" alt="" />
+          <img src="./assets/logo.png" class="log-image" alt="" />
         </figure>
       </div>
     </footer>
