@@ -4,5 +4,5 @@
 
 
 # jang
-- subscribe.html
-for subscription page
+- add subsciption section in homepage.
+- subscription page & contact page.
