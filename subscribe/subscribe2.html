@@ -12,17 +12,20 @@
             background-color: #ffffff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+
         .subscribe-container .header {
             text-align: center;
             font-size: 24px;
             margin-bottom: 20px;
             font-family: 'Lucida Sans';
         }
-        
+
         .pricing-cards {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap; /* Add this line to allow cards to wrap */
         }
+
         .subscribe-card {
             flex: 1;
             padding: 20px;
@@ -30,20 +33,32 @@
             border-radius: 10px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             text-align: center;
+            margin-bottom: 20px;
+            width: calc(33.33% - 20px); /* Adjust card width */
         }
+
         .subscribe-card img {
             width: 150px;
+            height: 100px;
             margin-bottom: 10px;
         }
+
         .subscribe-card h2 {
             font-size: 36px;
             margin-bottom: 10px;
         }
+
         .subscribe-card p {
             font-size: 18px;
             font-family: 'Lucida Sans';
             font-style: oblique;
             color: #333;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .subscribe-card {
+                width: calc(50% - 20px); 
+            }
         }
         
         label {
@@ -89,17 +104,17 @@
         </div>
         <div class="pricing-cards">
             <div class="subscribe-card">
-                <img src="plant-basicplan.jpg">
+                <img src="../assets/plant-basicplan.jpg">
                 <h2>$0</h2>
                 <p>Basic Plan</p>
             </div>
             <div class="subscribe-card">
-                <img src="plant-proplan.jpg">
+                <img src="../assets/plant-proplan.jpg">
                 <h2>$40</h2>
                 <p>Pro Plan</p>
             </div>
             <div class="subscribe-card">
-                <img src="plant-premiumplan.jpg">
+                <img src="../assets/plant-premiumplan.jpg">
                 <h2>$80</h2>
                 <p>Premium Plan</p>
             </div>
