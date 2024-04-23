@@ -1,34 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Fira+Sans:wght@200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+:root {
+  --blue: oklch(49% 0.192 280.49);
+  --white: oklch(66.09% 0.211 18.78);
+  --white: oklch(92.42% 0.001 197.14);
+  --green: #008000;
+  --semiGreen: rgb(147, 231, 172);
+  --fancy-gradient: linear-gradient(to right, var(--green), var(--semiGreen));
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-header,
-footer {
-  background-color: #0b7605;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
+/* Small devices such as large phones 640px and below) */
+.header {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--fancy-gradient);
+}
+
+/* Top header styling */
+.logo-and-account-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #153575;
+}
+
+.text-logo {
+  color: #05fa05;
+  cursor: pointer;
+  font-size: 1rem;
+
+  &:hover {
+    color: #ff6347;
+  }
+}
+
+.account-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.account {
+}
+
+.acount-link {
+  color: #05fa05;
+  font-size: 1rem;
+}
+
+.acount-link:hover {
+  color: #ff6347;
+}
+
+/* Middle header styling */
+
+.plants-and-search-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #b0c4de;
+}
+
+.logo {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.plant-image {
+  display: none;
+}
+
+.search-form {
+  position: relative;
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  display: flex;
+  align-items: center;
+  z-index: 3;
+  height: 44px;
+  background: white;
+  border: 1px solid #dfe1e5;
+  box-shadow: none;
+  border-radius: 24px;
+  margin: 1rem auto;
+  max-width: 100%;
+}
+
+.search-form:hover {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+.search-icon {
+  position: absolute;
+  top: 0.7rem;
+  left: 0.5rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: green;
+}
+
+.input-field {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.87);
+  word-wrap: break-word;
+  outline: none;
+  display: flex;
+  flex: 100%;
+  height: 34px;
+  font-size: 16px;
+  max-width: 100%;
+  width: 100%;
+  padding: 0 0 0 2rem;
+
+  &::placeholder {
+    padding-left: 0.5rem;
+  }
+}
+
+.voice-search {
+  font-size: 1.6rem;
+  margin-right: 0.5rem;
+  color: green;
+  cursor: pointer;
+}
+
+.search-btn {
+}
+
+.plant-container {
+}
+
+.plant-image {
+  display: none;
+}
+
+/* Button header styling */
+
+.navbar-categories-and-language-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #9fafdf;
+}
+
+.categories {
+  display: none;
+}
+
+.navbar-items {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.navbar-item {
+}
+
+.navbar-item-link {
+  font-size: 1rem;
+}
+
+.navbar-item-link {
+  font-size: 1rem;
+}
+
+.navbar-item-link:hover {
+  color: #ff6347;
+}
+
+.subscribe {
+  display: none;
+}
+
+.subscribe:hover {
+  color: #ff6347;
 }
 
 main {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
+  width: 95%;
+  margin: 1rem auto;
+}
+
+.shop-page-title {
+  font-size: 1rem;
+  color: green;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1rem 0;
 }
 
 .pcards-parent {
   display: grid;
-  flex-wrap: wrap;
-  justify-content: center;
-  column-gap: 3rem;
-  row-gap: 2rem;
-  margin-inline: 1rem;
-  max-width: 1024px;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 1rem;
+  row-gap: 1rem;
 }
 
 .pcard {
@@ -37,6 +228,12 @@ main {
   overflow: hidden;
   text-align: center;
   flex-basis: 175px;
+}
+
+img {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
 }
 
 .pcards-parent h2 {
@@ -55,4 +252,697 @@ main {
 
 .pcards-parent button:hover {
   background-color: #555;
+}
+
+/* Medium devices such as tablets (768px and 1023px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Small devices such as large phones 640px and below) */
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Top header styling */
+  .logo-and-account-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #153575;
+  }
+
+  .text-logo {
+    color: #05fa05;
+    cursor: pointer;
+    font-size: 1rem;
+
+    &:hover {
+      color: #ff6347;
+    }
+  }
+
+  .account-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .account {
+  }
+
+  .acount-link {
+    color: #05fa05;
+    font-size: 1rem;
+  }
+
+  .acount-link:hover {
+    color: #ff6347;
+  }
+
+  /* Middle header styling */
+
+  .plants-and-search-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #b0c4de;
+  }
+
+  .logo {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .plant-image {
+    display: none;
+  }
+
+  .search-form {
+    position: relative;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    height: 44px;
+    background: white;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    margin: 1rem auto;
+    max-width: 100%;
+  }
+
+  .search-form:hover {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    border-color: rgba(223, 225, 229, 0);
+  }
+
+  .search-icon {
+    position: absolute;
+    top: 0.7rem;
+    left: 0.5rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: green;
+  }
+
+  .input-field {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.87);
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    flex: 100%;
+    height: 34px;
+    font-size: 16px;
+    max-width: 100%;
+    width: 100%;
+    padding: 0 0 0 2rem;
+
+    &::placeholder {
+      padding-left: 0.5rem;
+    }
+  }
+
+  .voice-search {
+    font-size: 1.6rem;
+    margin-right: 0.5rem;
+    color: green;
+    cursor: pointer;
+  }
+
+  .search-btn {
+  }
+
+  .plant-container {
+  }
+
+  .plant-image {
+    display: none;
+  }
+
+  /* Button header styling */
+
+  .navbar-categories-and-language-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #9fafdf;
+  }
+
+  .categories {
+    display: none;
+  }
+
+  .navbar-items {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .navbar-item {
+  }
+
+  .navbar-item-link {
+    font-size: 1rem;
+  }
+
+  .navbar-item-link {
+    font-size: 1rem;
+  }
+
+  .navbar-item-link:hover {
+    color: #ff6347;
+  }
+
+  .subscribe {
+    display: none;
+  }
+
+  .subscribe:hover {
+    color: #ff6347;
+  }
+
+  main {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .shop-page-title {
+    font-size: 1.4rem;
+    color: green;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1rem 0;
+  }
+
+  .pcards-parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+
+  .pcard {
+    border: 3px solid #069642;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    flex-basis: 175px;
+  }
+
+  .pcards-parent h2 {
+    margin-top: 0;
+  }
+
+  .pcards-parent button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .pcards-parent button:hover {
+    background-color: #555;
+  }
+}
+
+/* Large devices such as laptops (1024px and 1280px) */
+@media only screen and (min-width: 64em) and (max-width: 80em) {
+  /* Small devices such as large phones 640px and below) */
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Top header styling */
+  .logo-and-account-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #153575;
+  }
+
+  .text-logo {
+    color: #05fa05;
+    cursor: pointer;
+    font-size: 1rem;
+
+    &:hover {
+      color: #ff6347;
+    }
+  }
+
+  .account-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .account {
+  }
+
+  .acount-link {
+    color: #05fa05;
+    font-size: 1rem;
+  }
+
+  .acount-link:hover {
+    color: #ff6347;
+  }
+
+  /* Middle header styling */
+
+  .plants-and-search-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #b0c4de;
+  }
+
+  .logo {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .plant-image {
+    display: block;
+    width: 15rem;
+    height: 8rem;
+    border-radius: 2px;
+    object-fit: cover;
+  }
+
+  .search-form {
+    position: relative;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    height: 44px;
+    background: white;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    margin: 1rem auto;
+    max-width: 100%;
+  }
+
+  .search-form:hover {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    border-color: rgba(223, 225, 229, 0);
+  }
+
+  .search-icon {
+    position: absolute;
+    top: 0.7rem;
+    left: 0.5rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: green;
+  }
+
+  .input-field {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.87);
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    flex: 100%;
+    height: 34px;
+    font-size: 16px;
+    max-width: 100%;
+    width: 100%;
+    padding: 0 0 0 2rem;
+
+    &::placeholder {
+      padding-left: 0.5rem;
+    }
+  }
+
+  .voice-search {
+    font-size: 1.6rem;
+    margin-right: 0.5rem;
+    color: green;
+    cursor: pointer;
+  }
+
+  .search-btn {
+  }
+
+  .plant-container {
+  }
+
+  .plant-image {
+    display: block;
+    width: 15rem;
+    height: 8rem;
+    border-radius: 2px;
+    object-fit: cover;
+  }
+
+  /* Button header styling */
+
+  .navbar-categories-and-language-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #9fafdf;
+  }
+
+  .categories {
+    display: none;
+  }
+
+  .navbar-items {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .navbar-item {
+  }
+
+  .navbar-item-link {
+    font-size: 1rem;
+  }
+
+  .navbar-item-link {
+    font-size: 1rem;
+  }
+
+  .navbar-item-link:hover {
+    color: #ff6347;
+  }
+
+  .subscribe {
+    display: none;
+  }
+
+  .subscribe:hover {
+    color: #ff6347;
+  }
+
+  main {
+    width: 85%;
+    margin: 1rem auto;
+  }
+
+  .shop-page-title {
+    font-size: 1.8rem;
+    color: green;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1rem 0;
+  }
+
+  .pcards-parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+
+  .pcard {
+    border: 3px solid #069642;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    flex-basis: 175px;
+  }
+
+  .pcards-parent h2 {
+    margin-top: 0;
+  }
+
+  .pcards-parent button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .pcards-parent button:hover {
+    background-color: #555;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 80em) {
+  /* Small devices such as large phones 640px and below) */
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Top header styling */
+  .logo-and-account-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #153575;
+  }
+
+  .text-logo {
+    color: #05fa05;
+    cursor: pointer;
+    font-size: 1rem;
+
+    &:hover {
+      color: #ff6347;
+    }
+  }
+
+  .account-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .account {
+  }
+
+  .acount-link {
+    color: #05fa05;
+    font-size: 1rem;
+  }
+
+  .acount-link:hover {
+    color: #ff6347;
+  }
+
+  /* Middle header styling */
+
+  .plants-and-search-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #b0c4de;
+  }
+
+  .logo {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .plant-image {
+    display: block;
+  }
+
+  .search-form {
+    position: relative;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    height: 44px;
+    background: white;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    margin: 1rem auto;
+    max-width: 100%;
+  }
+
+  .search-form:hover {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    border-color: rgba(223, 225, 229, 0);
+  }
+
+  .search-icon {
+    position: absolute;
+    top: 0.7rem;
+    left: 0.5rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: green;
+  }
+
+  .input-field {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.87);
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    flex: 100%;
+    height: 34px;
+    font-size: 16px;
+    max-width: 100%;
+    width: 100%;
+    padding: 0 0 0 2rem;
+
+    &::placeholder {
+      padding-left: 0.5rem;
+    }
+  }
+
+  .voice-search {
+    font-size: 1.6rem;
+    margin-right: 0.5rem;
+    color: green;
+    cursor: pointer;
+  }
+
+  .search-btn {
+  }
+
+  .plant-container {
+  }
+
+  .plant-image {
+    display: block;
+    width: 15rem;
+    height: 8rem;
+    border-radius: 2px;
+    object-fit: cover;
+  }
+
+  /* Button header styling */
+
+  .navbar-categories-and-language-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #9fafdf;
+  }
+
+  .categories {
+    display: none;
+  }
+
+  .navbar-items {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .navbar-item {
+  }
+
+  .navbar-item-link {
+    font-size: 1rem;
+  }
+
+  .navbar-item-link {
+    font-size: 1rem;
+  }
+
+  .navbar-item-link:hover {
+    color: #ff6347;
+  }
+
+  .subscribe {
+    display: none;
+  }
+
+  .subscribe:hover {
+    color: #ff6347;
+  }
+
+  main {
+    width: 85%;
+    margin: 1rem auto;
+  }
+
+  .shop-page-title {
+    font-size: 2rem;
+    color: green;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1rem 0;
+  }
+
+  .pcards-parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+
+  .pcard {
+    border: 3px solid #069642;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    flex-basis: 175px;
+  }
+
+  .pcards-parent h2 {
+    margin-top: 0;
+  }
+
+  .pcards-parent button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .pcards-parent button:hover {
+    background-color: #555;
+  }
 }
