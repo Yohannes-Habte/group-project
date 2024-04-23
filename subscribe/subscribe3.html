@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Popup Example</title>
+<style>
+    /* Style for the overlay */
+    .overlay {
+        display: none; /* Hide the overlay by default */
+        position: fixed; /* Position the overlay */
+        top: 0;
+        left: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+        z-index: 999; /* Set a high z-index to ensure the overlay appears on top */
+    }
+    
+    /* Style for the popup */
+    .popup {
+        display: none; /* Hide the popup by default */
+        position: fixed; /* Position the popup */
+        top: 50%; /* Center the popup vertically */
+        left: 50%; /* Center the popup horizontally */
+        transform: translate(-50%, -50%); /* Center the popup precisely */
+        background-color: #f1f1f1; /* Background color of the popup */
+        padding: 20px; /* Padding for the content inside the popup */
+        border: 1px solid #ccc; /* Border around the popup */
+        border-radius: 5px; /* Rounded corners for the popup */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Box shadow for the popup */
+        z-index: 1000; /* Set a higher z-index to ensure the popup appears on top of the overlay */
+    }
+
+    /* Style for the close button */
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<!-- Button to trigger the popup -->
+<label for="popup-toggle">Open Popup</label>
+<input type="checkbox" id="popup-toggle">
+
+<!-- Overlay -->
+<div class="overlay" onclick="document.getElementById('popup-toggle').checked = false;"></div>
+
+<!-- Popup container -->
+<div class="popup">
+    <!-- Close button for the popup -->
+    <span class="close" onclick="document.getElementById('popup-toggle').checked = false;">&times;</span>
+    <!-- Content of the popup -->
+    <h2>This is a Popup</h2>
+    <p>Hello, this is some content inside the popup.</p>
+</div>
+
+</body>
+</html>
