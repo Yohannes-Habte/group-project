@@ -125,7 +125,7 @@ form input[type="submit"]:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 400px;
+    max-width: 700px;
     width: 100%;
     background-color: #88e580;
     padding: 20px;
@@ -141,10 +141,21 @@ form2 label {
     display: block;
     margin-bottom: 10px;
 }
-form2 input[type="text"],
+form2 input[type="text"] {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input[type="text"]#message {
+    width: 80%;
+    height: 100px;
+  }
 form2 input[type="email"],
 form2 input[type="number"] {
-    width: 100%;
+    width: 40%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
