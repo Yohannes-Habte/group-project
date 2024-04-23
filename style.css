@@ -1,16 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Fira+Sans:wght@200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Fira+Sans:wght@200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .header {
   display: flex;
   flex-direction: column;
+}
+:root {
+  --blue: oklch(49% 0.192 280.49);
+  --white: oklch(66.09% 0.211 18.78);
+  --white: oklch(92.42% 0.001 197.14);
+  --fancy-gradient: linear-gradient(to right, var(--blue), var(--white));
+}
+body {
+  font-family: system-ui, Ubuntu, "Helvetica Neue", sans-serif;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100dvh;
 }
 
 /* Top header styling */
@@ -20,7 +34,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #e6e6fa;
+  background-color: #153575;
 }
 
 .logo-container {
@@ -167,6 +181,50 @@
 
 .language:hover {
   color: #ff6347;
+}
+/* Blog styling */
+header {
+  background-image: var(--fancy-gradient);
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  color: var(--white);
+}
+
+main {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.bcards-parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 3rem;
+  row-gap: 2rem;
+  margin-inline: 1rem;
+  max-width: 1024px;
+}
+
+.bcard {
+  border: 3px solid #487e06;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  flex-basis: 175px;
+}
+
+.bcard figcaption {
+  font-weight: 600;
+  margin-bottom: 5px;
 }
 
 /* Footer styling */
