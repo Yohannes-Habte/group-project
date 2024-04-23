@@ -412,6 +412,8 @@
   }
 
   .login-image {
+    width: 100%;
+    height: 100%;
   }
 
   .login-form {
@@ -604,6 +606,8 @@
   }
 
   .login-image {
+    width: 100%;
+    height: 100%;
   }
 
   .login-form {
