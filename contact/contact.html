@@ -10,8 +10,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="subscribe/subscribe.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="contact.css" />
     <title>Plantation</title>
   </head>
   <body>
@@ -23,10 +23,10 @@
 
         <ul class="account-wrapper">
           <li class="account">
-            <a class="acount-link" href="register.html">Sign Up</a>
+            <a class="acount-link" href="../register.html">Sign Up</a>
           </li>
           <li class="account">
-            <a class="acount-link" href="login.html">Sign In</a>
+            <a class="acount-link" href="../login.html">Sign In</a>
           </li>
         </ul>
       </section>
@@ -34,7 +34,7 @@
       <!-- Middle Header section -->
       <div class="plants-and-search-wrapper">
         <figure class="logo-container">
-          <img src="./assets/logo.png" class="logo" alt="" />
+          <img src="../assets/logo.png" class="logo" alt="" />
         </figure>
         <form action="" class="search-form">
           <span class="search-icon">
@@ -52,7 +52,7 @@
           ></span>
         </form>
         <figure class="plant-container">
-          <img class="plant-image" src="./assets/forest.jpg" alt="" />
+          <img class="plant-image" src="../assets/forest.jpg" alt="" />
         </figure>
       </div>
 
@@ -63,126 +63,55 @@
         >
         <nav class="navbar-items">
           <li class="navbar-item">
-            <a class="navbar-item-link" href=""> Home </a>
+            <a class="navbar-item-link" href="../"> Home </a>
           </li>
 
           <li class="navbar-item">
-            <a class="navbar-item-link" href=""> Blogs </a>
+            <a class="navbar-item-link" href="Blogs/index.html"> Blogs </a>
           </li>
 
           <li class="navbar-item">
-            <a class="navbar-item-link" href=""> Shop </a>
+            <a class="navbar-item-link" href="../Shop/index.html"> Shop </a>
           </li>
 
           <li class="navbar-item">
-            <a class="navbar-item-link" href="subscribe/subscribe.html"> Subscription </a>
+            <a class="navbar-item-link" href="../subscribe/subscribe.html"> Subscription </a>
           </li>
           <li class="navbar-item">
-            <a class="navbar-item-link" href="contact/contact.html"> Contact </a>
+            <a class="navbar-item-link" href="../contact/contact.html"> Contact </a>
           </li>
         </nav>
         <!-- <span class="language">Language</span> -->
       </div>
     </header>
     <br />
-    <!-- Blog section -->
-    <main>
-      <header>
-        <h2>Planter's Blog</h2>
-      </header>
-      <section class="bcards-parent">
-        <div class="bcard">
-          <figure>
-            <img
-              src="https://picsum.photos/382"
-              alt="Indoor Plants"
-              width="100%"
-            />
-            <figcaption>Indoor Plants</figcaption>
-          </figure>
-        </div>
-        <div class="bcard">
-          <figure>
-            <img src="https://picsum.photos/381" alt="" width="100%" />
-            <figcaption>Outdoor Plants</figcaption>
-          </figure>
-        </div>
-        <div class="bcard">
-          <figure>
-            <img src="https://picsum.photos/383" alt="Veggies" width="100%" />
-            <figcaption>Veggies</figcaption>
-          </figure>
-        </div>
-        <div class="bcard">
-          <figure>
-            <img src="https://picsum.photos/385" alt="Flowers" width="100%" />
-            <figcaption>Flowers</figcaption>
-          </figure>
-        </div>
-        <div class="bcard">
-          <figure>
-            <img
-              src="https://picsum.photos/386"
-              alt="Succulents"
-              width="100%"
-            />
-            <figcaption>Succulents</figcaption>
-          </figure>
-        </div>
-        <div class="bcard">
-          <figure>
-            <img
-              src="https://picsum.photos/387"
-              alt="Harvesting"
-              width="100%"
-            />
-            <figcaption>Harvesting</figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <!--Shop-->
+    
       
       <!--Subscription-->
       <div class="subscribe-container">
         <div class="header">
-             more plants, a better plan
+          Please fill out the form below to enter into a contract with Plantation.
         </div>
         <div class="pricing-cards">
-            <div class="subscribe-card">
-                <img src="../assets/plant-basicplan.jpg">
-                <h2>$0</h2>
-                <p>Basic Plan</p>
-            </div>
-            <div class="subscribe-card">
-                <img src="../assets/plant-proplan.jpg">
-                <h2>$40</h2>
-                <p>Pro Plan</p>
-            </div>
-            <div class="subscribe-card">
-                <img src="../assets/plant-premiumplan.jpg">
-                <h2>$80</h2>
-                <p>Premium Plan</p>
-            </div>
+            
+            <img src="../assets/plant-premiumplan.jpg">
         </div>
         <br>
-        <form action="submit.php" method="post">
-            <label for="plan">choose plan :</label>
-            <select name="plan" id="plan">
-                <option value="basic">basic - $0/month</option>
-                <option value="standard">pro - $40/month</option>
-                <option value="premium">premium - $80/month</option>
-            </select>
-            <label for="email">email :</label>
-            <input type="email" id="email" name="email" required>
-            <label for="name">name :</label>
-            <input type="text" id="name" name="name" required>
-            <label for="card">card number :</label>
-            <input type="text" id="card" name="card" required>
-            <label for="cvv">CVV :</label>
-            <input type="text" id="cvv" name="cvv" required>
-            <input type="submit" value="subscribe now">
-        </form>
+        <form class="contact-form" action="submit_contract.php" method="post">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="phone">Your Phone Number:</label>
+          <input type="text" id="phone" name="phone">
+          
+          <label for="message">Additional Message:</label>
+          <textarea id="message" name="message"></textarea>
+          
+          <input type="submit" value="Submit Contract">
+      </form>
     </div>
     <!-- subscription -->
       
