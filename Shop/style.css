@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer {
+  background-color: #0b7605;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.pcards-parent {
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 3rem;
+  row-gap: 2rem;
+  margin-inline: 1rem;
+  max-width: 1024px;
+}
+
+.pcard {
+  border: 3px solid #069642;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  flex-basis: 175px;
+}
+
+.pcards-parent h2 {
+  margin-top: 0;
+}
+
+.pcards-parent button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pcards-parent button:hover {
+  background-color: #555;
+}
