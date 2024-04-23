@@ -12,7 +12,7 @@
     />
 
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="banner.css" />
     <link rel="stylesheet" href="subscribe/subscribe.css" />
     <title>Plantation</title>
   </head>
@@ -69,69 +69,72 @@
           </li>
 
           <li class="navbar-item">
-            <a class="navbar-item-link" href="blog"> Blogs </a>
-          </li>
-
-          <li class="navbar-item">
             <a class="navbar-item-link" href="./Shop/index.html"> Shop </a>
           </li>
 
-         
           <li class="navbar-item">
-            <a class="navbar-item-link" href="contact/contact.html"> Contact </a>
-
+            <a class="navbar-item-link" href="#"> Contact </a>
           </li>
         </nav>
 
         <span class="subscribe"> Subscribe </span>
-
       </div>
     </header>
-    <br />
-<!-- Banner and Vedio Section Starts-->
-    
-<div class="container">
-  <div class="banner">
-      <div class="banner-text">
-              <h2 style="color:white">“Plant seeds of happiness, hope, success, and love; it will all come back to you in abundance. This is the law of nature.”
-              </h2>
+
+    <!-- Banner and Vedio Section Starts-->
+
+    <div class="container">
+      <div class="banner">
+        <div class="banner-text">
+          <h2 style="color: white">
+            “Plant seeds of happiness, hope, success, and love; it will all come
+            back to you in abundance. This is the law of nature.”
+          </h2>
+        </div>
       </div>
-  </div>
 
-<div class="plants-type">
-  <div class="type-text">
-      <h2>Differnet Types of Plants</h2>
-  </div>
-  <div class="gellary">
-      <figure>
-      <img src="./images/Plant-Garden.jpg" alt="Plant Image">
-      <figcaption>Outdoor Plant</figcaption>
-      </figure>
-      <figure>
-      <img src="./images/aloverea.jpg" alt="Aloverea Plant Image">
-      <figcaption>Indoor plant</figcaption>
-  </figure>
-  <figure>
-      <img src="./images/flower.jpg" alt="Flower Image Image">
-      <figcaption>Seasonal Plant</figcaption>
-  </figure>
-  <figure>
-      <img src="./images/hanging_plants.jpg" alt="Hanging Plant Image">
-      <figcaption>Hanging Plant</figcaption>
-  </figure>
-  </div>
-</div>
+      <div class="plants-type">
+        <div class="type-text">
+          <h2>Differnet Types of Plants</h2>
+        </div>
+        <div class="gellary">
+          <figure>
+            <img src="./images/Plant-Garden.jpg" alt="Plant Image" />
+            <figcaption>Outdoor Plant</figcaption>
+          </figure>
+          <figure>
+            <img src="./images/aloverea.jpg" alt="Aloverea Plant Image" />
+            <figcaption>Indoor plant</figcaption>
+          </figure>
+          <figure>
+            <img src="./images/flower.jpg" alt="Flower Image Image" />
+            <figcaption>Seasonal Plant</figcaption>
+          </figure>
+          <figure>
+            <img src="./images/hanging_plants.jpg" alt="Hanging Plant Image" />
+            <figcaption>Hanging Plant</figcaption>
+          </figure>
+        </div>
+      </div>
 
-<div class="plantening">
-      <h2>Let's Make Our Home Green </h2>
-      <br>
-      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/yXIS-c9HsXc?si=OxMyq30G8NtG3rQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="plantening">
+        <h2>Let's Make Our Home Green</h2>
+        <br />
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/yXIS-c9HsXc?si=OxMyq30G8NtG3rQw"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
 
-  </div>
-</div>
+    <!-- banner and vedio section end-->
 
-<!-- banner and vedio section end-->
-    
     <!-- Blog section -->
     <main class="main">
       <h2>Planter's Blog</h2>
@@ -326,55 +329,52 @@
       </section>
 
       <!--Shop-->
-      
+
       <!--Subscription-->
       <div class="subscribe-container">
-        <div class="header">
-             more plants, a better plan
-        </div>
+        <div class="header">more plants, a better plan</div>
         <div class="pricing-cards">
-            <div class="subscribe-card">
-                <img src="./assets/plant-basicplan.jpg">
-                <h2>$0</h2>
-                <p>Basic Plan</p>
-            </div>
-            <div class="subscribe-card">
-                <img src="./assets/plant-proplan.jpg">
-                <h2>$40</h2>
-                <p>Pro Plan</p>
-            </div>
-            <div class="subscribe-card">
-                <img src="./assets/plant-premiumplan.jpg">
-                <h2>$80</h2>
-                <p>Premium Plan</p>
-            </div>
+          
+          <div class="subscribe-card">
+            <img src="../assets/plant-basicplan.jpg" />
+            <h2>$0</h2>
+            <p>Basic Plan</p>
+          </div>
+          <div class="subscribe-card">
+            <img src="../assets/plant-proplan.jpg" />
+            <h2>$40</h2>
+            <p>Pro Plan</p>
+          </div>
+          <div class="subscribe-card">
+            <img src="../assets/plant-premiumplan.jpg" />
+            <h2>$80</h2>
+            <p>Premium Plan</p>
+          </div>
+
         </div>
-        <br>
+        <br />
         <form action="submit.php" method="post">
-            <label for="plan">❤️ choose plan :</label>
-            <select name="plan" id="plan">
-                <option value="basic">basic - $0/month</option>
-                <option value="standard">pro - $40/month</option>
-                <option value="premium">premium - $80/month</option>
-            </select>
+          
+          <label for="plan">choose plan :</label>
+          <select name="plan" id="plan">
+            <option value="basic">basic - $0/month</option>
+            <option value="standard">pro - $40/month</option>
+            <option value="premium">premium - $80/month</option>
+          </select>
+          <label for="email">email :</label>
+          <input type="email" id="email" name="email" required />
+          <label for="name">name :</label>
+          <input type="text" id="name" name="name" required />
+          <label for="card">card number :</label>
+          <input type="text" id="card" name="card" required />
+          <label for="cvv">CVV :</label>
+          <input type="text" id="cvv" name="cvv" required />
+          <input type="submit" value="subscribe now" />
 
-            <label for="email">&#x1F4E7; <!-- Represents the email emoji 📧 -->email :</label>
-            <input type="email" id="email" name="email" required>
-            <label for="name">&#x1F3F7; <!-- Represents the name tag emoji 🏷️ -->
-              name :</label>
-            <input type="text" id="name" name="name" required>
-            <label for="card"> 💳 card number :</label>
-            <input type="text" id="card" name="card" required>
-            <label for="cvv"> 💳 CVV :</label>
-            <input type="text" id="cvv" name="cvv" required>
-            <input type="submit" value="subscribe now">
         </form>
-    </div>
-    <!-- subscription -->
-      
+      </div>
+      <!-- subscription -->
     </main>
-
-    
 
     <footer class="footer">
       <article class="mapping-and-social-media-container">
