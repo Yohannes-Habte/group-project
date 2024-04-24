@@ -1032,6 +1032,71 @@ h1 {
     color: #ff6347;
   }
 
+  /* banner and vedio */
+  *{
+    padding:0;
+    margin:0;
+}
+
+.container{
+    width:100%;
+    height: 100vh;
+}
+
+.banner{
+    
+    width:100%;
+    height:80vh;
+    background-image: url("./assets/growing_plant.jpg");
+    background-size: cover;
+    background-position: 100%;
+    text-align: center;
+    
+}
+
+
+
+h2{
+    color:rgb(126, 206, 45);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.type-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align:center;
+    margin: 20px auto;
+}
+
+.gellary{
+    display:flex;
+    width:100%;
+    justify-content: center;
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:rgb(126, 206, 45);
+    margin: 30px auto;
+}
+
+.gellary img{
+    height:110px;
+    width:230px;
+    object-fit:cover;  
+    padding:10px;
+}
+
+
+.plantening{
+    width: 650px;
+    height: 365px; 
+    text-align: center;
+    margin: 60px auto; 
+}
+
+
   /* Blog styling */
   header {
     background-image: var(--fancy-gradient);
